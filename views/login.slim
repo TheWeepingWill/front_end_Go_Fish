@@ -1,0 +1,21 @@
+.text-center.margin-y-xl
+    h1.font-5x-large  Go Fish
+    h2.font-3x-large The Classic Card Game
+
+
+.flex.justify-center
+  .card.two-fifths-width
+    .card__header
+      h3 Login
+
+    .card__body
+      form action='/join' method='POST'
+        .form__group
+          label.form__label Name
+          input.form__input type='text' placeholder='Your name...' name='name'
+
+    .card__footer
+      .flex.justify-end
+      a href="/home_page"
+       button.btn--primary type='submit' Log In
+      a
